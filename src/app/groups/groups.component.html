@@ -1,0 +1,36 @@
+      <!-- <div>
+        <div > 
+        <img class="image" src="https://secure.meetupstatic.com/photos/member/c/8/f/6/member_252291446.jpeg">
+        </div>
+        <div class="overlay">
+          latstgfsjgdjhgfkj
+        <br> {{group.city}}
+        </div>
+      </div> -->
+
+
+
+<div class="hero-back">
+</div>
+<h1 class="text-center">Meetup groups in Pune</h1>
+
+
+<div class="row">
+  <div class="offset-md-1 col-md-10 container">
+    <div *ngFor="let group of allGroups" class="show" (click)="showDetail(group)">
+
+      <div>
+        <div *ngIf="group.key_photo.photo_link" > 
+          <img class="image" src="{{group.key_photo.photo_link}}">
+        </div>
+        <div class="overlay">
+          {{group.name}}
+        <br> {{group.city}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

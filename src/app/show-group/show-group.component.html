@@ -1,0 +1,38 @@
+
+
+
+<img src="{{group.key_photo.highres_link}}" class="group-icon">
+
+
+<br>
+<div class="row detail-container">
+  <div class="offset-md-1 col-md-10">
+    <div class="row">
+    <div class="col-md-8">
+        <h1>{{group.name}}</h1>
+  <i class="fas fa-map-marker-alt mar"></i>{{group.city}},{{group.country}}
+<br>
+  <i class="fas fa-users mar"></i>{{group.members}} members
+  <br>
+   <i class="fas fa-user-alt"></i> Organised by {{group.organizer.name}}
+
+  <br>
+  <br>
+  <br>
+<h3>What we're about</h3>
+
+  {{group.description}}
+
+    </div>
+    <div class="col-md-4">
+      <agm-map [latitude]="lat" [longitude]="lon" >
+	<agm-marker [latitude]="lat" [longitude]="lon"></agm-marker>	
+  </agm-map>
+
+    </div>
+    </div>
+  </div>
+
+  
+
+</div>

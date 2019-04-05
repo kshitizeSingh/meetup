@@ -1,0 +1,68 @@
+/* for making footer to stay at bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 90%;
+}
+
+
+
+.view {
+  /* background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg") no-repeat center center; */
+   background: url("https://res.cloudinary.com/practicaldev/image/fetch/s--POIFI1DQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://zocdocstatic.wpengine.com/wp-content/uploads/2018/04/international_womens_day_zocdoc.gif") no-repeat center center;
+  /* https://lh3.googleusercontent.com/rgQay7gOgrMSZkwZNgY7QAWriB6u5FwYvD6l_Ha4yiZxN_UzYDU-Evfa0zCWXGaYJFc */
+  background-size: cover;
+  height: 100vh;
+}
+.navbar {
+  background-color: transparent;
+}
+.top-nav-collapse {
+  background-color: #964d99;
+}
+.slogan{
+  font-weight: bolder
+}
+.footer_m{
+  background: white;
+  border-top: 5px solid #964d99;
+  text-align: center;
+  padding: 1% 0 0 1%;
+  bottom: 0px;
+  width:100%;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #964d99;
+  }
+}
+.button{
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 1.6;
+    outline: 0;
+    padding: 8px 32px;
+    transition: background .15s;
+    vertical-align: middle;
+    width: 250px;
+}
+
+.button_primary{
+  margin-top: 2%;
+  background-color: #f13a59;
+}
+

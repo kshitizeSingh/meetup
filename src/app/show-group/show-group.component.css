@@ -1,0 +1,14 @@
+.group-icon{
+  width: 100%;
+}
+agm-map {
+  height: 300px;
+  width: 300px;
+}
+
+.detail-container{
+  margin: 15px;
+}
+.mar{
+  margin:5px;
+}
