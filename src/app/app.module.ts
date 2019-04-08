@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }  from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -20,7 +20,7 @@ import { ShowGroupComponent } from './show-group/show-group.component';
 import { LoginComponent } from './login/login.component'
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NavbarModule, WavesModule, AppRoutingModule,CardsFreeModule,ButtonsModule,HttpClientModule,
+  imports:      [ BrowserModule, FormsModule, NavbarModule, WavesModule, AppRoutingModule,CardsFreeModule,ButtonsModule,HttpClientModule,ReactiveFormsModule,
   AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
     })],

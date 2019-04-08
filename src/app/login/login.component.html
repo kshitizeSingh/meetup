@@ -1,1 +1,18 @@
 <p>login</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form [formGroup]="loginForm">
+  <input type="text" formControlName="userName" placeholder="user">
+  <br>
+  <input type="password" formControlName="password" placeholder="password">
+</form>
+{{loginForm.errors }}here
