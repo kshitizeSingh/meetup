@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DataShareServiceService} from '../data-share-service.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private dataShare:DataShareServiceService) { }
+  user:string
   ngOnInit() {
+    this.dataShare.loggedUser.subscribe(
+      user=>{
+        this.user=user
+      }
+    )
   }
 
 }
