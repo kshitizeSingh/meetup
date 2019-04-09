@@ -1,18 +1,16 @@
-<p>login</p>
+<div class="login-background"></div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<form [formGroup]="loginForm">
-  <input type="text" formControlName="userName" placeholder="user">
-  <br>
-  <input type="password" formControlName="password" placeholder="password">
-</form>
-{{loginForm.errors }}here
+<div class="login-card-wraper">
+  <div class="login-card">
+    <form [formGroup]="loginForm">
+      <input type="text" class="form-control" formControlName="userName" placeholder="user">
+      <br>
+      <input type="password" class="form-control" formControlName="password" placeholder="password">
+    </form>
+  </div>
+
+</div>
+
+
+
+{{loginForm.errors }}

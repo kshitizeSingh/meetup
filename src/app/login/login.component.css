@@ -1,0 +1,21 @@
+.login-background{
+  min-height: 50%;
+  background-color: #964d99;
+  padding-top: 25%
+}
+
+
+.login-card-wraper{  
+  display: flex;
+  justify-content: center;
+}
+
+.login-card{
+  border-radius: 5px; 
+  position: absolute;
+  top: 20%;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
