@@ -2,13 +2,21 @@
 
 <div class="login-card-wraper">
   <div class="login-card">
-    <form [formGroup]="loginForm">
-      <input type="text" class="form-control" formControlName="userName" placeholder="user">
+    <br>
+    <h1 class="header-logo">Meetup</h1>
+    <hr>
+
+
+    <form [formGroup]="loginForm" class="form">
+      <label for="user">User/E-mail</label>
+      <input type="text" class="form-control input-theme" id="user" formControlName="userName" placeholder="user">
       <br>
-      <input type="password" class="form-control" formControlName="password" placeholder="password">
+      <label for="password">Password</label>
+      <input type="password" class="form-control input-theme" id="password" formControlName="password" placeholder="password">
+      <br>
+      <button class="btn login-btn">login</button>
     </form>
   </div>
-
 </div>
 
 

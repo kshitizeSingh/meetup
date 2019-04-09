@@ -4,7 +4,6 @@
   padding-top: 25%
 }
 
-
 .login-card-wraper{  
   display: flex;
   justify-content: center;
@@ -19,3 +18,24 @@
   background-color: white;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+.header-logo{
+  text-align: center;
+  color: #964d99;
+}
+
+.form{
+  margin: 10px
+  }
+
+.input-theme{
+  border-color:  #964d99
+}
+
+.login-btn{
+  background-color: #964d99;
+  color: white;
+  width: 100%;
+  margin: 0px;
+}
+
