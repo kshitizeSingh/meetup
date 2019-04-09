@@ -7,14 +7,14 @@
     <hr>
 
 
-    <form [formGroup]="loginForm" class="form">
+    <form [formGroup]="loginForm" class="form" (ngSubmit)="login()">
       <label for="user">User/E-mail</label>
       <input type="text" class="form-control input-theme" id="user" formControlName="userName" placeholder="user">
       <br>
       <label for="password">Password</label>
       <input type="password" class="form-control input-theme" id="password" formControlName="password" placeholder="password">
       <br>
-      <button class="btn login-btn">login</button>
+      <button class="btn login-btn" [disabled]="!loginFo.valid" type="submit">login</button>
     </form>
   </div>
 </div>

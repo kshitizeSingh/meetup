@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators ,FormControl} from '@angular/forms';
+import {DataShareServiceService} from '../data-share-service.service';
+
 
 
 @Component({
@@ -9,7 +11,7 @@ import { FormBuilder, Validators ,FormControl} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,private dataShare:DataShareServiceService) { }
   loginForm = this.fb.group({
     userName: ["", Validators.required],
     password: ["",[ Validators.required, this.requiredNumber]],
@@ -19,6 +21,9 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
+    console.log(this.loginForm.value.userName)
+    this.dataShare.setLoggedUser(this.loginForm.value.userName)
+    console.log(this.loginForm.value.userName)
     this.loginForm.value
   }
 
