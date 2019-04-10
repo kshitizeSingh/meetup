@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
    constructor(private http: HttpClient) { }
-   getAllgroups(data): Observable<any> {
+   l(data): Observable<any> {
     return this.http.post('url',data) 
   }
 
