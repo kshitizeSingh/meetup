@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators ,FormControl} from '@angular/forms';
 import {DataShareServiceService} from '../data-share-service.service';
+import { Router } from '@angular/router';
 
 
 
@@ -11,7 +12,7 @@ import {DataShareServiceService} from '../data-share-service.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private fb: FormBuilder,private dataShare:DataShareServiceService) { }
+  constructor(private fb: FormBuilder,private dataShare:DataShareServiceService,private router: Router) { }
   loginForm = this.fb.group({
     userName: ["", Validators.required],
     password: ["",[ Validators.required, this.requiredNumber]],
@@ -25,6 +26,8 @@ export class LoginComponent implements OnInit {
     this.dataShare.setLoggedUser(this.loginForm.value.userName)
     console.log(this.loginForm.value.userName)
     this.loginForm.value
+
+    this.router.navigate(['/groups'']);
   }
 
   requiredNumber(control:FormControl){
