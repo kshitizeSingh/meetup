@@ -17,7 +17,8 @@ import { GroupsComponent } from './groups/groups.component';
 import { GroupsSeviceService } from './groups/groups-sevice.service';
 import { DataShareServiceService } from './data-share-service.service';
 import { ShowGroupComponent } from './show-group/show-group.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NavbarModule, WavesModule, AppRoutingModule,CardsFreeModule,ButtonsModule,HttpClientModule,ReactiveFormsModule,
@@ -26,6 +27,6 @@ import { LoginComponent } from './login/login.component'
     })],
   declarations: [ AppComponent, HelloComponent, DashboardComponent, HomeComponent, GroupsComponent, ShowGroupComponent, LoginComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [GroupsSeviceService, DataShareServiceService]
+  providers: [GroupsSeviceService, DataShareServiceService, LoginService]
 })
 export class AppModule { }

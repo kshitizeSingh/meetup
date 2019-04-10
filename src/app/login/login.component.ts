@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.value.userName)
     this.loginForm.value
 
-    this.router.navigate(['/groups'']);
+    this.router.navigate(['/groups']);
   }
 
   requiredNumber(control:FormControl){
