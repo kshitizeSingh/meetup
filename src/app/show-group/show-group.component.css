@@ -12,3 +12,7 @@ agm-map {
 .mar{
   margin:5px;
 }
+
+.hero{
+  min-height: 100%
+}

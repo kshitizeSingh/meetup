@@ -1,7 +1,7 @@
 
 
 
-<img src="{{group.key_photo.highres_link}}" class="group-icon">
+<img src="{{group.key_photo.highres_link}}" height="100%" class="group-icon hero">
 
 
 <br>
@@ -20,8 +20,9 @@
   <br>
   <br>
 <h3>What we're about</h3>
-
-  {{group.description}}
+  <div [innerHTML]="group.description">
+  
+  </div>
 
     </div>
     <div class="col-md-4">
