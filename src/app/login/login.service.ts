@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
    constructor(private http: HttpClient) { }
-   l(data): Observable<any> {
+   login(data): Observable<any> {
     return this.http.post('url',data) 
   }
 
