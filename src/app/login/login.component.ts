@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
 
   login(){
     console.log(this.loginForm.value.userName)
-    this.dataShare.setLoggedUser(this.loginForm.value.userName)
+    this.dataShare.setLoggedUser(this.loginForm.value)
     console.log(this.loginForm.value.userName)
     this.loginService.login().subscribe(
       login=>{
